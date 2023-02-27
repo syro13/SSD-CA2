@@ -1,3 +1,13 @@
+<?php
+require_once('database.php');
+
+// Get products
+$queryGames = 'SELECT * FROM game';
+$statement = $db->prepare($queryGames);
+$statement->execute();
+$games = $statement->fetchAll();
+$statement->closeCursor();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -16,12 +26,26 @@
     
   <?php include 'includes/header.php';?>
 <main class="container">
-  <div class="starter-template text-center">
-    <h1>Page 3</h1>
-    <p class="lead">Use this document as a way to quickly start any new project.<br> All you get is this text and a mostly barebones HTML document.</p>
+<div class="starter-template text-center">
+  <table class="table table-hover table-primary">
+            <tr>
+                <th>Game ID</th>
+                <th>Game Name</th>
+            </tr>
+
+            <?php foreach ($games as $game) : ?>
+            <tr>
+                <td><?php echo $game['gameID']; ?></td>
+                <td><?php echo $game['gameName']; ?></td>
+            </tr>
+            <?php endforeach; ?>
+            </table>
+    </section>
   </div>
 
+  <?php include 'includes/footer.php';?>
 </main><!-- /.container -->
     <script src="js/bootstrap.bundle.min.js"></script>
   </body>
+  
 </html>
