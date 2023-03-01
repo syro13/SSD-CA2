@@ -1,14 +1,20 @@
-<!DOCTYPE HTML>
-<html>
+<!doctype html>
+<html lang="en">
 
 <head>
-	<link href="css/bootstrap.min.css" rel="stylesheet">
-	<link href="css/mystyle.css" rel="stylesheet">
-	<title>Post Run</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="">
+  <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+  <meta name="generator" content="Hugo 0.80.0">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom styles for this template -->
+  <link href="css/mystyle.css" rel="stylesheet">
+</head>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
       <div class="container">
-        <a class="navbar-brand" href="index.php">Site Title</a>
+        <a class="navbar-brand" href="index.php">Speedrunning Leaderboards</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>

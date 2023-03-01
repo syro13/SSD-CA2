@@ -10,37 +10,27 @@ $statement->closeCursor();
 ?>
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Hugo 0.80.0">
-    <title>Starter Template · Bootstrap v5.0</title>
-    <!-- Bootstrap core CSS -->
-<link href="css/bootstrap.min.css" rel="stylesheet">
-    <!-- Custom styles for this template -->
-    <link href="mystyle.css" rel="stylesheet">
-  </head>
-  <body>
+<?php include 'includes/header.php';?>
+	<title>Games</title>
+  <body style="background-color:#CFCBC9">
     
-  <?php include 'includes/header.php';?>
+  
+  <h1 class = "text-center m-2">Games</h1>
 <main class="container">
 <div class="starter-template text-center">
-  <table class="table table-hover table-primary">
-            <tr>
-                <th>Game ID</th>
-                <th>Game Name</th>
-            </tr>
+<div class="card-container">
+      <!-- <table class="table table-hover table-primary"> -->
 
-            <?php foreach ($games as $game) : ?>
-            <tr>
-                <td><?php echo $game['gameID']; ?></td>
-                <td><?php echo $game['gameName']; ?></td>
-            </tr>
-            <?php endforeach; ?>
-            </table>
-    </section>
+      <?php foreach ($games as $data) : ?>
+        <div class="card border border-dark my-2" style="width: 18rem;">
+          <div class="card-body ">
+            <img class="card-img img_sizing" src="<?php echo $data['gameIMG']; ?>"/>
+            <h5 class="card-title"><?php echo $data['gameName']; ?></h5>
+          </div>
+        </div>
+      <?php endforeach; ?>
+    </div>
+  </div>
   </div>
 
   <?php include 'includes/footer.php';?>

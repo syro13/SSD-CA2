@@ -1,5 +1,6 @@
 DROP TABLE IF EXISTS runner;
 CREATE TABLE runner (
+    runnerIMG varchar(255) NOT NULL,
     runnerID varchar(20) NOT NULL,
     runnerName varchar(255) NOT NULL,
     PRIMARY KEY(runnerID));
@@ -27,18 +28,18 @@ CREATE TABLE leaderboard(
 -- Dumping data for table `products`
 --
 
-INSERT INTO runner (`runnerID`, `runnerName`) VALUES
-('R01', 'Forsen'),
-('R02', 'Dream'),
-('R03', 'DarkViperAU'),
-('R04', 'FriendlyBaron'),
-('R05', 'Maximumm'),
-('R06', 'Wirtual'),
-('R07', 'Hefest'),
-('R08', 'UnNameD'),
-('R09', 'Simply'), 
-('R10', 'burhác'), 
-('R11', 'racehans'); 
+INSERT INTO runner (`runnerIMG`,`runnerID`, `runnerName`) VALUES
+('https://static-cdn.jtvnw.net/jtv_user_pictures/forsen-profile_image-48b43e1e4f54b5c8-300x300.png','R01', 'Forsen'),
+('https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Dream_icon.svg/1200px-Dream_icon.svg.png','R02', 'Dream'),
+('https://pbs.twimg.com/profile_images/1231090379442622465/GYGi4f4T_400x400.jpg','R03', 'DarkViperAU'),
+('https://pbs.twimg.com/profile_images/985963526052184064/hMYj3Vl-_400x400.jpg','R04', 'FriendlyBaron'),
+('https://www.speedrun.com/userasset/qjo9k3j6/image?v=e770a84','R05', 'Maximumm'),
+('https://static-cdn.jtvnw.net/jtv_user_pictures/20ce0b57-c04e-48ea-9dd0-64962b11cb29-profile_image-300x300.png','R06', 'Wirtual'),
+('https://pbs.twimg.com/profile_images/1387140081375395852/MrNTi0c4_400x400.jpg','R07', 'Hefest'),
+('https://www.speedrun.com/userasset/8vo0e4vx/image?v=3a2fb5f','R08', 'UnNameD'),
+('https://pbs.twimg.com/profile_images/1336017673784872963/zhIKLy-e_400x400.jpg','R09', 'Simply'), 
+('https://www.speedrun.com/userasset/e8e6gd6j/image?v=a734af2','R10', 'burhác'), 
+('https://yt3.googleusercontent.com/ytc/AL5GRJXoShgDUpvQu3la7ERs0v_0vsOg-EV47IOASQ9L=s176-c-k-c0x00ffffff-no-rj','R11', 'racehans'); 
 
 INSERT INTO game (`gameIMG`,`gameID`, `gameName`) VALUES
 ('https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/4/28/bjoyslzjb3uxqyg82uz2/minecraft','G01', 'Minecraft'),
