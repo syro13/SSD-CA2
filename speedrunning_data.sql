@@ -1,15 +1,3 @@
---
--- Database: `guitar_shop`
---
-CREATE DATABASE IF NOT EXISTS `guitar_shop` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
-USE `guitar_shop`;
-
--- --------------------------------------------------------
-
---
--- Table structure for table `products`
---
-
 DROP TABLE IF EXISTS runner;
 CREATE TABLE runner (
     runnerID varchar(20) NOT NULL,
@@ -18,6 +6,7 @@ CREATE TABLE runner (
     
 DROP TABLE IF EXISTS game;
 CREATE TABLE game (
+    gameIMG varchar(255) NOT NULL,
     gameName varchar(255) NOT NULL,
     gameID varchar(20) NOT NULL,
     PRIMARY KEY(gameID));
@@ -51,12 +40,13 @@ INSERT INTO runner (`runnerID`, `runnerName`) VALUES
 ('R10', 'burhác'), 
 ('R11', 'racehans'); 
 
-INSERT INTO game (`gameID`, `gameName`) VALUES
-('G01', 'Minecraft'),
-('G02', 'Grand Theft Auto 5'),
-('G03', 'Red Ball'),
-('G04', 'TrackMania Nations Forever'),
-('G05', 'Mario 64');
+INSERT INTO game (`gameIMG`,`gameID`, `gameName`) VALUES
+('https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/4/28/bjoyslzjb3uxqyg82uz2/minecraft','G01', 'Minecraft'),
+('https://qph.cf2.quoracdn.net/main-qimg-77434f4eb8c9764d9dbfbee082101e04-lq','G02', 'Grand Theft Auto 5'),
+('https://www.gameszap.com/files/img/red-ball-1508260327.jpg','G03', 'Red Ball'),
+('https://cdn.cloudflare.steamstatic.com/steam/apps/11020/capsule_616x353.jpg?t=1548090419','G04', 'TrackMania Nations Forever'),
+('https://upload.wikimedia.org/wikipedia/en/6/6a/Super_Mario_64_box_cover.jpg','G05', 'Mario 64'),
+('https://www.gematsu.com/wp-content/uploads/2022/09/Trackmania-Ann_09-10-22.jpg','G06', 'TrackMania 2020');
 
 INSERT INTO leaderboard(`position`,`runnerID`,`gameID`,`runTime`) VALUES
 (3,'R01','G05','0:26:26'),
@@ -64,8 +54,8 @@ INSERT INTO leaderboard(`position`,`runnerID`,`gameID`,`runTime`) VALUES
 (24,'R03','G02','6:20:47'),
 (14,'R04','G02','6:09:17'),
 (22,'R05','G03','0:2:55'),
-(2,'R06','G04','0:58:05'),
-(1,'R07','G04','0:07:56'),
+(2,'R06','G06','0:58:05'),
+(5,'R07','G04','0:07:56'),
 (1,'R08','G02','5:45:09'),
 (6,'R09','G05','0:47:43'),
 (13,'R10','G02','5:52:22'),
