@@ -1,0 +1,12 @@
+/* Add your own CSS under here */
+.small-container{
+    max-width: 600px;
+    margin:auto;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-content: stretch;
+}

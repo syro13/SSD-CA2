@@ -1,3 +1,11 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/mystyle.css" rel="stylesheet">
+	<title>Post Run</title>
+
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Eighth navbar example">
       <div class="container">
         <a class="navbar-brand" href="index.php">Site Title</a>
