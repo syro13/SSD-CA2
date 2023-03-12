@@ -1,7 +1,7 @@
 # Jakub Lowis | SSD CA1
 This is a website where I show certain speedrunners, their respective games and info about each of their runs.
 
-## Layout
+## Navigation Bar
 
 There is a simple navbar with 3 options with the website name bringing you to the home page
 
