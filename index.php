@@ -26,7 +26,7 @@ $statement->closeCursor();
       <?php foreach ($leaderboard as $data) : ?>
         <div class="card border my-2" style="width: 18rem;">
           <div class="card-body ">
-            <img class="card-img img_sizing" src="<?php echo $data['gameIMG']; ?>"/>
+            <img class="card-img" src="<?php echo $data['gameIMG']; ?>"/>
             <h5 class="card-title"><?php echo $data['runnerName']; ?></h5>
             <p>Game: <?php echo $data['gameName']; ?></p>
             <p>Position: <?php echo $data['position']; ?></p>

@@ -1,4 +1,7 @@
 <?php
+    // $dsn = 'mysql:host=localhost;dbname=D00246698';
+    // $username = 'D00246698';
+    // $password = 'qbAYimpX';
     $dsn = 'mysql:host=localhost;dbname=speedrunning_data';
     $username = 'root';
     $password = '';
